@@ -20,12 +20,12 @@
             </div>
 
             <div class="main-row2">
-                <div class="main-row2-btn"> 
+                <div class="main-row2-btn" onclick="goToPage('html/class-criteria.html')"> 
                     <div class="row2-comp1"><img src="img/document-icon.png" class="doc-icon"></div>
                     <div class="row2-comp2">Check Classification Criteria</div>
                     <div class="row2-comp3"><img src="img/next-angle-icon.png" class="doc-icon"></div>
                 </div>
-                <div class="main-row2-btn">
+                <div class="main-row2-btn" onclick="goToPage('index.html')">
                     <div class="row2-comp1"><img src="img/tool2-icon.png" class="doc-icon"></div>
                     <div class="row2-comp2">Start Uveitis Classification</div>
                     <div class="row2-comp3"><img src="img/next-angle-icon.png" class="doc-icon"></div>
@@ -39,6 +39,8 @@
                 <br><br>
                 <span>Ex) The classification criteria used in this app is written by the Standardization of Uveitis Nomenclature (SUN). 
                     The working group has classified 25 of the most common uveitides.</span>
+                    
+
             </div>
         </div>
 
@@ -47,5 +49,10 @@
                 © Developing Uveitis Classification Application
             </div>
         </footer>
+        <script>
+            function goToPage(url){
+                window.location = url;
+            }
+        </script>
     </body>
 </html>
