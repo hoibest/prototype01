@@ -16,3 +16,38 @@
     font-weight: 700;
     font-family: 'Poppins';
 }
+
+.main-table{
+    /*border: 1px dotted red;*/
+    margin-top: 1.8rem;
+    width: 100%;
+    max-width: 550px;
+    line-height: 25px;
+}
+
+.exclusion-box{
+    border: 1px solid grey;
+    background: #d5d5d5;
+    padding: 0.5rem;
+}
+
+.exclusion-title{
+    display: flex;
+    align-items: flex-end;
+}
+
+.exclusion-title>img{
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+}
+
+ol{
+    margin: 0;
+    padding-left: 1rem;
+}
+
+ul{
+    margin: 0;
+    padding-left: 1rem;
+}
