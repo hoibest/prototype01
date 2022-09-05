@@ -1,0 +1,18 @@
+.class-title{
+    /*border: 1px dotted green;*/
+    margin-top: 2.5rem;
+    width: 100%;
+    max-width: 550px;
+    font-size: 1.6rem;
+    font-weight: 200;
+    font-family: 'Poppins';
+}
+
+.table-of-contents{
+    /*border: 1px dotted green;*/
+    width: 100%;
+    max-width: 550px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Poppins';
+}

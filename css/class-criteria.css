@@ -25,11 +25,12 @@
     line-height: 25px;
 }
 
-.main-table>ul>li>a{
+.main-table>ul>li>a:link{
     text-decoration:dotted;
     text-decoration-line: underline;
     text-decoration-color: grey;
 }
+
 
 .main-table>ul>li>a:hover{
     text-decoration:dotted;
