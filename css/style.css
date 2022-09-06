@@ -108,9 +108,17 @@ header{
 }
 
 footer{
-    background: #747070;
-    padding-top: 8rem;
-    padding-bottom: 1.5rem;
-    padding-left: 6.15%;
-    /*border: 1px dotted blue;*/
+    background: #828181;
+    min-height: 160px;
+    display: flex;
+    align-items: end;
+}
+
+.footer-content{
+    width : 87.7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    font-family: 'Poppins';
+    font-size: 0.8rem;
 }
