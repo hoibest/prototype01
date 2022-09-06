@@ -26,15 +26,15 @@
 }
 
 .main-table>ul>li>a:link{
-    text-decoration:dotted;
     text-decoration-line: underline;
+    text-decoration:dotted;
     text-decoration-color: grey;
 }
 
 
 .main-table>ul>li>a:hover{
-    text-decoration:dotted;
     text-decoration-line: underline;
+    text-decoration:dotted;
     color: #747070;
     text-decoration-color: grey;
     cursor: pointer;
