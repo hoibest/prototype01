@@ -113,7 +113,7 @@
             <div class="row3">
                 <div class="backNext">
                     <div>
-                        <a id="diagnosis1"><button onclick="goToPage('../select-location.html')" class="backButton" id="backButton">Back</button></a>
+                        <a id="diagnosis1"><button onclick="warning()" class="backButton" id="backButton">Back</button></a>
                     </div>
                     <div class="nextDiv">
                         <a href="diagnosis02.html"><button class="nextButton">Next</button></a>
@@ -131,6 +131,20 @@
             let idList = ['age-el','firstDiagnosis-el','symptomatic-el','onset-el','course-el','laterality-el']
             loadData(idList);
             design(1);
+        </script>
+        <script>
+             function warning(){
+                let text = 
+                `
+Leave page?
+Changes that you made will not be saved`;
+                if (confirm(text) == true) {
+                    sessionStorage.clear();
+                    goToPage('../select-location.html')
+                } else {
+                    document.getElementById("diagnosis1").setAttribute("href","");
+                }
+            }
         </script>
     </body>
 </html>
