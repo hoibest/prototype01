@@ -17,7 +17,7 @@
         <div class="nav">
             <div class="nav-content-wrapper">
                 <div class="nav-text-content" id="nav-text-content">
-                    4/5 History
+                    4/6 Ex-Ocular Disease
                 </div>
                 <div class="nav-bar-content">
                     <div id="nav-greenbar" class="nav-greenbar"></div>
@@ -114,10 +114,11 @@
                 © Developing Uveitis Classification Application
             </div>
         </footer>
+        <script src="../../js/loading.js"></script>
         <script>
-            function goToPage(url){
-                window.location = url;
-            }
+            let idList = ['dermHZ-el','oligoArth-el','rfNegPolyArth-el','juvPsorArth-el','spondyloArth-el']
+            loadData(idList);
+            design(4);
         </script>
     </body>
 </html>

@@ -17,7 +17,7 @@
         <div class="nav">
             <div class="nav-content-wrapper">
                 <div class="nav-text-content" id="nav-text-content">
-                    2/5 History
+                    2/6 Examination(1)
                 </div>
                 <div class="nav-bar-content">
                     <div id="nav-greenbar" class="nav-greenbar"></div>
@@ -99,17 +99,6 @@
                     </div>
                 </div>
                 <!----------------------------------------------------->
-                <div class="row2-content">
-                    <div class="symptom"><div>Posterior Synechiae</div></div>
-                    <div class="input">
-                        <select id="posSynechiae-el" onchange="keepData(this)">
-                            <option value="">Select</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                             <option value="Don't know">Don't know</option>
-                        </select>
-                    </div>
-                </div>
                 <!----------------------------------------------------->
                 <div class="row2-content">
                     <div class="symptom"><div>Heterochromia</div></div>
@@ -141,7 +130,7 @@
                 <!----------------------------------------------------->
                 <!----------------------------------------------------->
                 <div class="row2-content">
-                    <div class="symptom"><div>Herpes Simplex Keratitis</div></div>
+                    <div class="symptom"><div>Keratitis</div></div>
                     <div class="input">
                         <select id="keratitis-el" onchange="keepData(this)"> 
                             <option value="">Select</option>                   
@@ -195,10 +184,12 @@
                 © Developing Uveitis Classification Application
             </div>
         </footer>
+        <script src="../../js/loading.js"></script>
         <script>
-            function goToPage(url){
-                window.location = url;
-            }
+            let idList = ['antChamberFlare-el','antChamberCells-el','kp-el','irisAtrophy-el',
+            'heterochromia-el','irisNodules-el','keratitis-el','endotheliitis-el','endoLesions-el']
+            loadData(idList);
+            design(2);
         </script>
     </body>
 </html>

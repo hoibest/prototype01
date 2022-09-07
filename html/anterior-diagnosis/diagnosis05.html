@@ -17,7 +17,7 @@
         <div class="nav">
             <div class="nav-content-wrapper">
                 <div class="nav-text-content" id="nav-text-content">
-                    5/5 History
+                    5/6 Labs
                 </div>
                 <div class="nav-bar-content">
                     <div id="nav-greenbar" class="nav-greenbar"></div>
@@ -143,7 +143,7 @@
                         <a href="diagnosis04.html"><button class="backButton" onclick="">Back</button></a>
                     </div>
                     <div class="nextDiv">
-                        <a href="diagnosis05.html"><button class="nextButton">Next</button></a>
+                        <a href="../result-page/result.html"><button class="nextButton">Next</button></a>
                     </div>
                 </div>
             </div>
@@ -153,10 +153,12 @@
                 © Developing Uveitis Classification Application
             </div>
         </footer>
+        <script src="../../js/loading.js"></script>
         <script>
-            function goToPage(url){
-                window.location = url;
-            }
+            let idList = ['posPcrCmv-el','posPcrHsv-el','posPcrVzv-el','posHlaB27-el',
+            'posRenalBiopsy-el','elUrineBM-el','abUrineAn-el','elSerumCr-el']
+            loadData(idList);
+            design(5);
         </script>
     </body>
 </html>

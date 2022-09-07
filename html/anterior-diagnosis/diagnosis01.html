@@ -17,7 +17,7 @@
         <div class="nav">
             <div class="nav-content-wrapper">
                 <div class="nav-text-content" id="nav-text-content">
-                    1/5 History
+                    1/6 History
                 </div>
                 <div class="nav-bar-content">
                     <div id="nav-greenbar" class="nav-greenbar"></div>
@@ -126,10 +126,11 @@
                 © Developing Uveitis Classification Application
             </div>
         </footer>
+        <script src="../../js/loading.js"></script>
         <script>
-            function goToPage(url){
-                window.location = url;
-            }
+            let idList = ['age-el','firstDiagnosis-el','symptomatic-el','onset-el','course-el','laterality-el']
+            loadData(idList);
+            design(1);
         </script>
     </body>
 </html>
