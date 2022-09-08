@@ -1,4 +1,5 @@
 function goToPage(url){
+    console.log("hi")
     window.location = url;
 }
 
