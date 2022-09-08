@@ -235,7 +235,7 @@ function createBtn(dis,type){
 for(let i = 0; i < dxList.length; i++){
     for(let j = 0; j < antUveitisList.length; j++){
         if(dxList[i]==antUveitisList[j].nameShort){
-            dxText.push(createBtn(antUveitisList[i],"c-comp1"));
+            dxText.push(createBtn(antUveitisList[j],"c-comp1"));
         }
     }
 }
