@@ -141,8 +141,13 @@
     text-decoration: underline;
     text-decoration-style: dotted;
     border-bottom: 1px solid black;
+    color: #4f66c9;
+    cursor: pointer;
 }
 
+.criteria-link:hover{
+    cursor: pointer;
+}
 
 
 .not-fulfilled{
