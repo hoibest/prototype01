@@ -234,10 +234,40 @@ function createBtn(dis,type){
     return btnHtml;
 }
 
-for(let i = 0; i < dxList.length; i++){
-    for(let j = 0; j < antUveitisList.length; j++){
-        if(dxList[i]==antUveitisList[j].nameShort){
-            dxText.push(createBtn(antUveitisList[j],"c-comp1"));
+
+
+if(dxList.length==0){
+    let c = COURSE;
+    let l = LATERALITY;
+    if(c==`Don't know`){c=`(unknown course)`;}
+    if(l==`Don't know`){c=`(unknown laterality)`;}
+    let undifferentiated = `Undifferentiated, ${l}, ${c} anterior uveitis`
+    dxText.push(
+        `<div class="content" id="undifferentiated" onclick="showModal(this)">
+            <div class="c-comp1"></div>
+            <div class='comp2'>Undifferentiated anterior uveitis</div>
+            <div class='comp3' id="comp3-undifferentiated"><img src='../../img/dropdown-icon.png'></div>
+        </div>
+        <div class="show-result" id="show-result-undifferentiated">
+            <div id="criteria-not-fulfilled" class="not-fulfilled">
+                <div style="font-size:16px;font-weight:400;">${undifferentiated}</div>
+                <br>
+                <div style="font-size:12px;font-weight:400; margin-bottom: 2rem;">
+                    50% of presented uveitis cases are undifferentiated. 
+                    <br>
+                    Also, check "Possible Uveitides" and see whether further evidence can be fulfilled. 
+                    For example, 'retinitis' or 'vitreous cells' is required to satisfy some criteria. 
+                </div>
+            </div>
+        </div>`
+    );
+}
+else{
+    for(let i = 0; i < dxList.length; i++){
+        for(let j = 0; j < antUveitisList.length; j++){
+            if(dxList[i]==antUveitisList[j].nameShort){
+                dxText.push(createBtn(antUveitisList[j],"c-comp1"));
+            }
         }
     }
 }

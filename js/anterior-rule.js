@@ -145,6 +145,9 @@ function hsauRuleTwo(){
     if(POS_PCR_HSV=="yes"){
         a = TRUE;
     }
+    else if(POS_PCR_HSV==`Don't know`){
+        a = IDK;
+    }
     else{
         a = is(LATERALITY,"unilateral");
     }
@@ -240,6 +243,9 @@ function vzvauRuleTwo(){
     let a = IDK;
     if(POS_PCR_VZV=="yes"){
         a = TRUE;
+    }
+    else if(POS_PCR_VZV==`Don't know`){
+        a = IDK;
     }
     else{
         a = is(LATERALITY,"unilateral");
