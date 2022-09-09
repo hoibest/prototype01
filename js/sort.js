@@ -240,7 +240,7 @@ if(dxList.length==0){
     let c = COURSE;
     let l = LATERALITY;
     if(c==`Don't know`){c=`(unknown course)`;}
-    if(l==`Don't know`){c=`(unknown laterality)`;}
+    if(l==`Don't know`){l=`(unknown laterality)`;}
     let undifferentiated = `Undifferentiated, ${l}, ${c} anterior uveitis`
     dxText.push(
         `<div class="content" id="undifferentiated" onclick="showModal(this)">
