@@ -83,8 +83,9 @@
     height: 48px;
     display: flex;
     align-items: center;
-    
 }
+
+
 
 .c-comp1 {
     width: 6.15%;
@@ -141,6 +142,8 @@
     text-decoration-style: dotted;
     border-bottom: 1px solid black;
 }
+
+
 
 .not-fulfilled{
     width: 87.7%;

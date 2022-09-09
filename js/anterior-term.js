@@ -187,7 +187,7 @@ const jiacauRule_2 = {
 const jiacauRule_3 = {
     ruleName : "jiacau #3",
     rule : jiacauRule_3_html,
-    variableNames: [`Oligoarthritis`,`RF-negative polyarthritis`,`Juvenile psoriatic arthritis`],
+    variableNames: [`Oligoarthritis`,`Polyarthritis`,`Psoriasis and arthritis`],
     variableValues: [OLIGO_ARTH,RF_NEG_POLY_ARTH,JUV_PSOR_ARTH],
     href: [html_4,html_4,html_4],
     userInput : function() {
@@ -220,7 +220,7 @@ const sauRule_2 = {
 const sauRule_3 = {
     ruleName : "sau #3",
     rule : sauRule_3_html,
-    variableNames: [`ASAS-defined spondyloarthritis`,`HLA-B27(+)`],
+    variableNames: [`Diagnosed spondyloarthritis`,`HLA-B27(+)`],
     variableValues: [SPONDYLO_ARTH,POS_HLA_B27],
     href: [html_4,html_5],
     userInput : function() {
@@ -231,7 +231,7 @@ const sauRule_3 = {
 const sauRule_4 = {
     ruleName : "sau #4",
     rule : sauRule_4_html,
-    variableNames: [`Course`,`ASAS-defined spondyloarthritis`,`HLA-B27(+)`],
+    variableNames: [`Course`,`Diagnosed spondyloarthritis`,`HLA-B27(+)`],
     variableValues: [COURSE,SPONDYLO_ARTH,POS_HLA_B27],
     href: [html_1,html_4,html_5],
     userInput : function() {
@@ -242,9 +242,9 @@ const sauRule_4 = {
 const tinuRule_1 = {
     ruleName : "tinu #1",
     rule : tinuRule_1_html,
-    variableNames: [`Anterior chamber cells`,`Vitritis`,`Choroiditis`,`Retinal Vascular Change`,`Anterior chamber inflammation`],
-    variableValues: [ANT_CHAMBER_CELLS,VITRITIS,CHOROIDITIS,RET_VAS_CHANGES,ANT_CHAMBER_FLARE],
-    href:[html_2,html_3,html_3,html_3,html_2],
+    variableNames: [`Anterior chamber cells`,`Vitreous Cells`,`Anterior chamber inflammation`],
+    variableValues: [ANT_CHAMBER_CELLS,VIT_CELLS,ANT_CHAMBER_FLARE],
+    href:[html_2,html_3,html_2],
     userInput : function() {
         return inputText(this.variableNames,this.variableValues,this.href,this.rule);
     }

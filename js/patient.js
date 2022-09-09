@@ -29,10 +29,10 @@ const ophthalExamObj = {
     endoLesions : DK,
     vitCells : DK,
     vitHaze : DK,
-    vitritis : DK,
-    choroiditis : DK,
+    //vitritis : DK,
+    //choroiditis : DK,
     retinitis : DK,
-    retVasChanges : DK,
+    //retVasChanges : DK,
     update : function () {
         this.keratitis = getSavedData('keratitis-el');
         this.kp = getSavedData('kp-el');
@@ -45,10 +45,10 @@ const ophthalExamObj = {
         this.endoLesions = getSavedData('endoLesions-el');
         this.vitCells = grade(getSavedData('vitCells-el'));
         this.vitHaze = grade(getSavedData('vitHaze-el'));
-        this.vitritis = getSavedData('vitritis-el');
-        this.choroiditis = getSavedData('choroiditis-el');
+        //this.vitritis = getSavedData('vitritis-el');
+        //this.choroiditis = getSavedData('choroiditis-el');
         this.retinitis = getSavedData('retinitis-el');
-        this.retVasChanges = getSavedData('retVasChanges-el');
+        //this.retVasChanges = getSavedData('retVasChanges-el');
     }
 }
 

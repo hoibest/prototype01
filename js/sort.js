@@ -196,7 +196,8 @@ function createBtn(dis,type){
     <div class="show-result" id="show-result-${dis.nameShort}">
         <div class="criteria-link" onclick="goToPage('${dis.link}')">Check the classification criteria</div>
         <div id="criteria-not-fulfilled" class="not-fulfilled">
-            <div style="font-size:20px;">Criteria not fulfilled</div>
+            <div style="font-size:20px;font-weight:700;">Criteria not fulfilled</div>
+            <div style="font-size:12px;font-weight:400;">Requires further evidence to be classified</div>
             <br>
             <div>
                 <div>
@@ -207,7 +208,7 @@ function createBtn(dis,type){
             </div>
         </div>
         <div id="criteria-fulfilled" class="fulfilled">
-            <div style="font-size:20px;">Criteria fulfilled</div>
+            <div style="font-size:20px;font-weight:700;">Criteria fulfilled</div>
             <br>
             <div>
                 <div>
@@ -218,7 +219,8 @@ function createBtn(dis,type){
             </div>
         </div>
         <div id="criteria-contradicted" class="contradicted">
-            <div style="font-size:20px;">Criteria contradicted</div>
+            <div style="font-size:20px;font-weight:700;">Criteria contradicted</div>
+            <div style="font-size:12px;font-weight:400;">*Disease may be classified through other evidence</div>
             <br>
             <div>
                 <div>

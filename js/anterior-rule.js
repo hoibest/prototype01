@@ -622,11 +622,30 @@ function tinuRuleOne(){
     let disList = tinuList;
     let a = IDK; let b = IDK;
     a = numIs(ANT_CHAMBER_CELLS);
-    if(VITRITIS=='no'&&CHOROIDITIS=='no'&&RET_VAS_CHANGES=='none'){
+    /*if(VITRITIS=='no'&&CHOROIDITIS=='no'&&RET_VAS_CHANGES=='none'){
         b = TRUE;
     }
     else if(VITRITIS=='yes'||CHOROIDITIS=='yes'||(RET_VAS_CHANGES!=dk&&RET_VAS_CHANGES!='none')){
         b = numIs(ANT_CHAMBER_FLARE);
+    }
+    else{
+        b = IDK;
+    }*/
+    if(VIT_CELLS > 0){
+        if(ANT_CHAMBER_FLARE != dk){
+            if(ANT_CHAMBER_FLARE > 0){
+                b = TRUE;
+            }
+            else{
+                b = FALSE;
+            }
+        }
+        else {
+            b = IDK;
+        }
+    }
+    else if(VIT_CELLS==0){
+        b = TRUE;
     }
     else{
         b = IDK;
