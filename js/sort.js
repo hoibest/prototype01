@@ -197,7 +197,7 @@ function createBtn(dis,type){
         <div class="criteria-link" onclick="goToPage('${dis.link}')">Check the classification criteria</div>
         <div id="criteria-not-fulfilled" class="not-fulfilled">
             <div style="font-size:20px;font-weight:700;">Criteria not fulfilled</div>
-            <div style="font-size:12px;font-weight:400;">Requires further evidence to be classified</div>
+            <div style="font-size:12px;font-weight:400;">Requires further evidence to be fulfilled</div>
             <br>
             <div>
                 <div>
